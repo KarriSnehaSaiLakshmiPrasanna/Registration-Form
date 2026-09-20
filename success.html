@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Successful</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="form-card success-card">
+            <div class="check">✓</div>
+            <h1>Registration Successful!</h1>
+            <p>Welcome, <strong>{{ name }}</strong>.</p>
+            <p>Your registration has been completed successfully.</p>
+            <p>Email: <strong>{{ email }}</strong></p>
+            <a class="back-button" href="{{ url_for('register') }}">Register Another Student</a>
+        </div>
+    </div>
+</body>
+</html>
